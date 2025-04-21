@@ -126,7 +126,7 @@
 
 @layer utilities {
 	.container {
-		@apply lg:max-w-5xl;
+		@apply lg:max-w-6xl;
 	}
 }
 

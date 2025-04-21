@@ -12,36 +12,37 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Équipe de Rohaty.com",
+    position: "Marketplace pour vendeurs locaux",
+    text: "Grâce au travail de Mohamed Ali, Rohaty.com est devenu une plateforme fluide et moderne. Son expertise en frontend, sa maîtrise de l’UX/UI et sa capacité à gérer les détails techniques ont permis de lancer une marketplace fonctionnelle sans paiement en ligne, centrée sur l’utilisateur. Un travail propre et bien structuré.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Équipe de Djibstudy",
+    position: "Plateforme éducative à la Djiboutienne",
+    text: "Mohamed Ali a su transformer une idée en un projet ambitieux : rendre l’apprentissage en ligne accessible à tous les Djiboutiens. Son implication dans le design, l’ergonomie et la structure du site montre sa capacité à créer des plateformes pédagogiques efficaces. Une fierté de l’avoir comme développeur principal.",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Équipe de Djib-Ticket",
+    position: "Marketplace de billets pour événements",
+    text: "Développer une marketplace pour la billetterie locale était un vrai défi, et Mohamed Ali l’a relevé avec brio. Son choix des outils (Next.js, Convex, Sanity...) et sa gestion des fonctionnalités comme la recherche, les catégories et les médias montrent son sérieux. Djib-Ticket est sur de bons rails grâce à lui.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "PrimoAfrikaNet",
+    position: "Client – Hébergement & site vitrine",
+    text: "Nous avons confié à Mohamed Ali la réalisation de notre site vitrine, et il a su comprendre nos besoins dès le départ. Le résultat est à la hauteur : design moderne, navigation intuitive et excellent support. Nous sommes très satisfaits de notre collaboration.",
     avatar: memojiAvatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Saleh Ismael",
+    position: "Client – Site personnel",
+    text: "Mohamed Ali a créé un site élégant et professionnel pour présenter mon profil. Il est à l’écoute, réactif, et propose toujours des idées utiles. Travailler avec lui a été un vrai plaisir, je le recommande vivement.",
     avatar: memojiAvatar5,
-  },
+  }
 ];
+
 
 export const TestimonialsSection = () => {
   return (

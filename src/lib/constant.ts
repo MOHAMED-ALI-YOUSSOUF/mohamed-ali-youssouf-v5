@@ -108,6 +108,101 @@ export const portfolioProjects = [
         ],
       }
       ,
+      {
+        company: "Djib Market",
+        year: "2024",
+        title: "E-commerce Multi-vendeurs pour Djibouti",
+        results: [
+          { title: "Vendeurs peuvent créer leur boutique en ligne" },
+          { title: "Catalogue produits avec gestion de stock" },
+          { title: "Déploiement sur Vercel" },
+        ],
+        link: "https://github.com/MOHAMED-ALI-YOUSSOUF/djib-market",
+        image: "/images/projects/djib-market.png",
+        description: "Djib Market est une plateforme e-commerce multi-vendeurs destinée aux commerçants djiboutiens. Chaque vendeur peut créer et gérer sa propre boutique en ligne, avec une interface intuitive.",
+        technologies: ["Next.js", "Tailwind CSS", "Clerk", "Sanity", "Vercel"],
+        challenges: [
+          "Gestion multi-utilisateurs avec des rôles vendeurs et clients",
+          "Interface intuitive pour le dashboard vendeur"
+        ],
+        solutions: [
+          "Utilisation de Clerk pour l’authentification et la gestion des rôles",
+          "Sanity pour la gestion dynamique des produits et des catégories"
+        ],
+        metrics: {
+          users: "200+ vendeurs inscrits (démo)",
+          transactions: "Phase de test",
+          launchDate: "Mars 2024"
+        },
+        gallery: [
+          "/images/projects/djib-market-1.png",
+          "/images/projects/djib-market-2.png"
+        ]
+      },
+    
+      {
+        company: "LMS Djibstudy",
+        year: "2024",
+        title: "Plateforme d'apprentissage pour étudiants djiboutiens",
+        results: [
+          { title: "Cours vidéo, quiz, et suivi de progression" },
+          { title: "Interface intuitive pour les apprenants" },
+          { title: "Basé sur Next.js et Tailwind" },
+        ],
+        link: "https://github.com/MOHAMED-ALI-YOUSSOUF/lms-djibstudy",
+        image: "/images/projects/lms-djibstudy.png",
+        description: "Un LMS (Learning Management System) simple mais efficace pour les étudiants djiboutiens. Il offre une expérience éducative structurée avec des vidéos, des quiz et des ressources pédagogiques.",
+        technologies: ["Next.js", "Tailwind CSS", "React Hook Form", "TypeScript"],
+        challenges: [
+          "Conception d'un système de quiz dynamique",
+          "Structuration des cours en modules"
+        ],
+        solutions: [
+          "Composants réutilisables pour les leçons, quiz et progression",
+          "Expérience utilisateur fluide et responsive"
+        ],
+        metrics: {
+          users: "300+ étudiants en test",
+          transactions: "N/A",
+          launchDate: "Février 2024"
+        },
+        gallery: [
+          "/images/projects/lms-djibstudy-1.png",
+          "/images/projects/lms-djibstudy-2.png"
+        ]
+      },
+    
+      {
+        company: "Startup Landing Page",
+        year: "2024",
+        title: "Site de présentation pour startup tech",
+        results: [
+          { title: "Landing page moderne et responsive" },
+          { title: "Animations et appels à l'action clairs" },
+          { title: "Basé sur Tailwind CSS et React" },
+        ],
+        link: "https://github.com/MOHAMED-ALI-YOUSSOUF/startup",
+        image: "/images/projects/startup.png",
+        description: "Une landing page professionnelle conçue pour présenter une startup tech, avec un design attrayant, des animations modernes et une mise en page optimisée pour la conversion.",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        challenges: [
+          "Créer une expérience visuelle fluide",
+          "Optimisation du taux de conversion"
+        ],
+        solutions: [
+          "Animations Framer Motion pour dynamiser la navigation",
+          "Composants réutilisables et responsive"
+        ],
+        metrics: {
+          users: "Site vitrine (pas de compte requis)",
+          transactions: "N/A",
+          launchDate: "Janvier 2024"
+        },
+        gallery: [
+          "/images/projects/startup-1.png",
+          "/images/projects/startup-2.png"
+        ]
+      },
     {
       company: "Personal Budget Tracker",
       year: "2024",

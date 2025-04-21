@@ -150,7 +150,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container">
+      <div className="containe">
         <div className="flex flex-col items-center relative" ref={imageRef}>
           <Image
             src={Mohamed_Ali_Youssouf}
@@ -176,6 +176,9 @@ export const HeroSection = () => {
 
         {/* CTA + Social */}
         <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-4">
+          <div className="flex items-center gap-4">
+
+        
           <motion.a
             href="https://linkedin.com/in/your-profile"
             target="_blank"
@@ -196,6 +199,7 @@ export const HeroSection = () => {
           >
             <Github size={28} />
           </motion.a>
+      
           <motion.a
             href="/MOHAMED_ALI_YOUSSOUF_RESUME.pdf"
             download
@@ -206,6 +210,7 @@ export const HeroSection = () => {
             <Download size={18} />
             <span className="text-sm font-semibold">CV</span>
           </motion.a>
+              </div>
 
           <Link href="#projects" className="inline-flex items-center gap-2 px-5 py-2 border rounded-xl text-white">
             <span className="font-semibold">Voir mes projets</span>

@@ -1,0 +1,532 @@
+{
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "heroSection": {
+    "availability": "Available for new projects",
+    "title": "Mohamed Ali Youssouf",
+    "description": "I transform ideas into modern, high-performing, and elegant web applications. Let's discuss your next project.",
+    "ctaProjects": "View my projects",
+    "cv": "Resume"
+  },
+  "aboutSection": {
+    "eyebrow": "About Me",
+    "title": "My Journey, My Passion",
+    "description": "A Web developer, specialized in frontend developer with a passion for technology and innovation.",
+    "whoIAm": {
+      "title": "Who I Am",
+      "description": "A glimpse into my professional journey and what drives me.",
+      "content": [
+        "My name is <strong>Mohamed Ali Youssouf</strong>, a Web developer, specialized in Frontend  development with a passion for technology and innovation. With a master’s degree in computer engineering, I have worked on various projects that allowed me to develop technical and creative skills while meeting the specific needs of clients and users.",
+        "I am passionate about web development because it enables me to turn ideas into tangible and functional solutions. What I love most is solving complex problems with simple and elegant interfaces. For me, every line of code should enhance the user experience.",
+        "I am constantly seeking new opportunities to contribute to impactful projects and continue growing in the field of web development."
+      ]
+    },
+    "certificate": {
+      "title": "Certificate",
+      "description": "My training in frontend development at TechPro Education.",
+      "content": [
+        "I earned a <strong>frontend developer certificate</strong> after completing an intensive online training program with <strong>TechPro Education</strong>. This training enabled me to master key technologies such as <em>HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS</em>, and other modern web development tools.",
+        "Thanks to this certification, I have strengthened my technical skills and solidified my ability to deliver complete, high-performing, and well-structured projects."
+      ]
+    },
+    "toolbox": {
+      "title": "My Toolbox",
+      "description": "The technologies I use to build digital experiences."
+    },
+    "hobbies": {
+      "title": "Beyond Code",
+      "description": "Discover my passions that fuel my creativity.",
+      "items": [
+        { "title": "Learning Languages", "emoji": "🗣️" },
+        { "title": "Building Projects", "emoji": "🛠️" },
+        { "title": "Knowledge Sharing", "emoji": "📚" },
+        { "title": "Technology", "emoji": "💻" },
+        { "title": "Traveling", "emoji": "✈️" },
+        { "title": "Entrepreneurship", "emoji": "📈" },
+        { "title": "Reading", "emoji": "📖" }
+      ]
+    }
+  },
+  "projectsSection": {
+    "eyebrow": "Real-world Results",
+    "title": "Featured Projects",
+    "projects": "Projects",
+    "description": "Explore impactful digital solutions crafted with passion.",
+    "viewAll": "View All Projects",
+    "viewDetail": "View Detail",
+    "liveSite": "Live Site",
+     "detail": "Detail",
+      "live": "Live "
+
+  },
+  "projectDetails": {
+    "description": "Description",
+    "technologies": "Technologies",
+    "challengesSolutions": "Challenges & Solutions",
+    "resultsMetrics": "Results & Metrics",
+    "visitSite": "Visit Site",
+    "backToProjects": "Projects"
+  },
+  "tapeSection": {
+    "words": [
+      "Performant",
+      "Accessible",
+      "Secure",
+      "Interactive",
+      "Scalable",
+      "User Friendly",
+      "Responsive",
+      "Maintainable",
+      "Search Optimized",
+      "Usable",
+      "Reliable"
+    ]
+  },
+  "testimonialsSection": {
+    "eyebrow": "Happy Clients",
+    "title": "What Clients Say about Me",
+    "description": "Don't just take my word for it. See what my clients have to say about my work.",
+    "testimonials": [
+      {
+        "name": "Rohaty.com Team",
+        "position": "Marketplace for Local Sellers",
+        "text": "Thanks to Mohamed Ali’s work, Rohaty.com has become a smooth and modern platform. His expertise in frontend, mastery of UX/UI, and ability to handle technical details enabled the launch of a functional, user-centered marketplace without online payments. Clean and well-structured work."
+      },
+      {
+        "name": "Djibstudy Team",
+        "position": "Djiboutian Educational Platform",
+        "text": "Mohamed Ali turned an idea into an ambitious project: making online learning accessible to all Djiboutians. His involvement in design, ergonomics, and site structure showcases his ability to create effective educational platforms. We’re proud to have him as our lead developer."
+      },
+      {
+        "name": "Djib-Ticket Team",
+        "position": "Event Ticketing Marketplace",
+        "text": "Developing a local ticketing marketplace was a real challenge, and Mohamed Ali rose to it brilliantly. His choice of tools (Next.js, Convex, Sanity...) and management of features like search, categories, and media demonstrate his professionalism. Djib-Ticket is on the right track thanks to him."
+      },
+      {
+        "name": "PrimoAfrikaNet",
+        "position": "Client – Hosting & Showcase Website",
+        "text": "We entrusted Mohamed Ali with creating our showcase website, and he understood our needs from the start. The result is impressive: modern design, intuitive navigation, and excellent support. We are very satisfied with our collaboration."
+      },
+      {
+        "name": "Saleh Ismael",
+        "position": "Client – Personal Website",
+        "text": "Mohamed Ali created an elegant and professional website to showcase my profile. He is attentive, responsive, and always offers valuable ideas. Working with him was a true pleasure, and I highly recommend him."
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Let's create something amazing together",
+    "description": "Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals.",
+    "button": "Contact Me"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+    "portfolioProjects": [
+      {
+        "company": "Rohaty.com",
+        "slug": "rohaty",
+        "link": "https://rohaty.com",
+        "year": "2025",
+        "title": "Online Marketplace for Djibouti",
+        "results": [
+          "Enable local sellers to showcase their products",
+          "Simple payment via WhatsApp",
+          "Built with Next.js, Sanity, and Clerk"
+        ],
+        "description": "Rohaty.com is a dynamic online marketplace designed to support local artisans and businesses in Djibouti by providing a platform to showcase and sell their products globally. The platform integrates a WhatsApp payment system tailored to local market preferences.",
+        "challenges": [
+          "Integrating WhatsApp as a payment system for a seamless user experience.",
+          "Ensuring scalability for a growing number of sellers and customers."
+        ],
+        "solutions": [
+          "Developed a custom WhatsApp API integration for order processing.",
+          "Utilized Sanity’s flexible CMS for dynamic content management."
+        ],
+        "metrics": {
+          "users": "10,000+ monthly active users",
+          "transactions": "5,000+ monthly transactions",
+          "launchDate": "January 2025"
+        }
+      },
+      {
+        "company": "AI Interview Prep",
+        "slug": "ai-interview-prep",
+        "link": "https://ai-interview-prep.vercel.app",
+        "year": "2025",
+        "title": "AI-Based Interview Preparation Tool",
+        "results": [
+          "Interactive AI-driven mock interviews",
+          "Personalized feedback and tailored question sets",
+          "Hosted on Vercel with Next.js"
+        ],
+        "description": "AI Interview Prep is an innovative platform that uses AI to simulate realistic job interviews, providing users with personalized feedback and tailored question sets to improve their performance. The tool is designed to help job seekers excel in technical and behavioral interviews.",
+        "challenges": [
+          "Ensuring AI-generated feedback is accurate and actionable.",
+          "Optimizing for low-latency responses during mock interviews."
+        ],
+        "solutions": [
+          "Fine-tuned OpenAI models for precise interview feedback.",
+          "Implemented server-side caching to reduce API latency."
+        ],
+        "metrics": {
+          "users": "5,000+ registered users",
+          "interviews": "20,000+ mock interviews conducted",
+          "launchDate": "February 2025"
+        }
+      },
+      {
+        "company": "DjibTicket",
+        "slug": "djibticket",
+        "link": "https://djibticket.vercel.app",
+        "year": "2025",
+        "title": "Ticketing Platform for Djibouti",
+        "results": [
+          "Users can search and book tickets online",
+          "Built with Convex and Next.js",
+          "Modern interface with dynamic filtering"
+        ],
+        "description": "DjibTicket is an online ticketing platform designed to simplify ticket sales and bookings for events in Djibouti. It allows users to search, filter, and book tickets with ease.",
+        "challenges": [
+          "Providing fast and efficient search within an event database.",
+          "Creating a seamless interface for ticket display and booking."
+        ],
+        "solutions": [
+          "Used Convex for real-time, high-performance search.",
+          "Modern interface with dynamic filtering and reusable components."
+        ],
+        "metrics": {
+          "users": "1,000+ users in testing",
+          "transactions": "100+ bookings recorded",
+          "launchDate": "April 2025"
+        }
+      },
+      {
+        "company": "PrimoAfrikanet",
+        "year": "2024",
+        "slug": "primoafrikanet",
+        "link": "https://primoafrikanet.com/en",
+        "title": "Consulting Platform for Africans in Turkey",
+        "results": [
+          "Connects entrepreneurs to Turkish market opportunities",
+          "Showcases events and consulting services",
+          "Built with a professional CMS and responsive design"
+        ],
+        "description": "PrimoAfrikanet is a consulting platform dedicated to Africans in Turkey, connecting entrepreneurs with local opportunities through consulting services, events, and training.",
+        "challenges": [
+          "Creating a clear and accessible multilingual interface.",
+          "Enabling dynamic content management for non-technical admins."
+        ],
+        "solutions": [
+          "Implemented a Sanity CMS for content flexibility.",
+          "Responsive design optimized for desktop and mobile."
+        ],
+        "metrics": {
+          "users": "500+ entrepreneurs connected",
+          "transactions": "30+ events organized",
+          "launchDate": "December 2024"
+        }
+      },
+      {
+        "company": "Djib Market",
+        "slug": "djibmarket",
+        "link": "https://djib-market.vercel.app",
+        "year": "2024",
+        "title": "Multi-Vendor E-commerce for Djibouti",
+        "results": [
+          "Vendors can create their online stores",
+          "Product catalog with inventory management",
+          "Deployed on Vercel"
+        ],
+        "description": "Djib Market is a multi-vendor e-commerce platform for Djiboutian merchants. Each vendor can create and manage their own online store with an intuitive interface.",
+        "challenges": [
+          "Managing multi-user roles for vendors and customers.",
+          "Creating an intuitive vendor dashboard interface."
+        ],
+        "solutions": [
+          "Used Clerk for authentication and role management.",
+          "Sanity for dynamic product and category management."
+        ],
+        "metrics": {
+          "users": "200+ registered vendors (demo)",
+          "transactions": "Testing phase",
+          "launchDate": "March 2024"
+        }
+      },
+      {
+        "company": "LMS Djibstudy",
+        "year": "2024",
+        "slug": "lms-djibstudy",
+        "link": "https://lms-djibstudy.vercel.app",
+        "title": "Learning Platform for Djiboutian Students",
+        "results": [
+          "Video courses, quizzes, and progress tracking",
+          "Intuitive interface for learners",
+          "Built with Next.js and Tailwind"
+        ],
+        "description": "A simple yet effective LMS (Learning Management System) for Djiboutian students. It provides a structured educational experience with videos, quizzes, and learning resources.",
+        "challenges": [
+          "Designing a dynamic quiz system.",
+          "Structuring courses into modules."
+        ],
+        "solutions": [
+          "Reusable components for lessons, quizzes, and progress tracking.",
+          "Fluid and responsive user experience."
+        ],
+        "metrics": {
+          "users": "300+ students in testing",
+          "transactions": "N/A",
+          "launchDate": "February 2024"
+        }
+      },
+      {
+        "company": "Startup Landing Page",
+        "slug": "startup",
+        "link": "https://startup.vercel.app",
+        "year": "2024",
+        "title": "Showcase Site for Tech Startup",
+        "results": [
+          "Modern and responsive landing page",
+          "Animations and clear calls to action",
+          "Built with Tailwind CSS and React"
+        ],
+        "description": "A professional landing page designed to showcase a tech startup, featuring an attractive design, modern animations, and a layout optimized for conversion.",
+        "challenges": [
+          "Creating a smooth visual experience.",
+          "Optimizing for conversion rates."
+        ],
+        "solutions": [
+          "Framer Motion animations for dynamic navigation.",
+          "Reusable and responsive components."
+        ],
+        "metrics": {
+          "users": "Showcase site (no accounts required)",
+          "transactions": "N/A",
+          "launchDate": "January 2024"
+        }
+      },
+      {
+        "company": "Personal Budget Tracker",
+        "slug": "budget-tracker",
+        "link": "https://personal-budget-tracker-bay.vercel.app/",
+        "year": "2024",
+        "title": "Financial Management Web Application",
+        "results": [
+          "Track income and expenses with interactive charts",
+          "Gain insights into spending patterns",
+          "Built with React and Chart.js"
+        ],
+        "description": "Personal Budget Tracker is a simple and interactive web application that allows users to track their personal finances through charts and visual reports.",
+        "challenges": [
+          "Creating clear visualizations of financial data.",
+          "Enabling intuitive input for income and expenses."
+        ],
+        "solutions": [
+          "Used Chart.js for dynamic charts.",
+          "Simple and responsive UI with React."
+        ],
+        "metrics": {
+          "users": "100+ personal users",
+          "transactions": "Multiple budgets tracked in testing",
+          "launchDate": "March 2024"
+        }
+      },
+      {
+        "company": "Djibstudy",
+        "slug": "djibstudy",
+        "link": "https://djibstudy.com",
+        "year": "2024",
+        "title": "Educational Platform for Djiboutian Students",
+        "results": [
+          "Resources and guidance for students",
+          "Custom blog and learning features",
+          "Hosted on djibstudy.com"
+        ],
+        "description": "Djibstudy is an educational platform offering free resources, career guidance, and blog articles to support Djiboutian students in their academic journey.",
+        "challenges": [
+          "Regularly curating relevant content for students.",
+          "Maintaining a simple design while integrating learning features."
+        ],
+        "solutions": [
+          "Custom blog system for publishing educational content.",
+          "Accessible and structured design for easy navigation."
+        ],
+        "metrics": {
+          "users": "2,000+ monthly visitors",
+          "transactions": "N/A",
+          "launchDate": "January 2024"
+        }
+      },
+      {
+        "company": "Saleh Ismael Portfolio",
+        "slug": "salehismael",
+        "link": "https://salehismael.com",
+        "year": "2023",
+        "title": "Modern portfolio website",
+        "description": "A professional portfolio built for a frontend developer to showcase projects, skills, and experience.",
+        "technologies": ["React.js", "Tailwind CSS", "Vercel"],
+        "challenges": [
+          "Creating a smooth and animated user experience while keeping performance high.",
+          "Ensuring perfect mobile responsiveness."
+        ],
+        "solutions": [
+          "Used Framer Motion for smooth animations.",
+          "Implemented responsive grid layout with Tailwind."
+        ],
+        "results": [
+          "Animated and engaging project showcase.",
+          "User-friendly and responsive design.",
+          "Fast loading thanks to static deployment."
+        ],
+        "gallery": []
+      },
+      {
+        "company": "IT Mastery",
+        "slug": "it-mastery",
+        "link": "https://it-mastery.vercel.app",
+        "year": "2023",
+        "title": "Educational platform built with React",
+        "description": "A team project focused on delivering accessible IT education through a simple and structured interface.",
+        "technologies": ["React.js", "Bootstrap", "Vercel"],
+        "challenges": [
+          "Designing a clear and engaging educational interface.",
+          "Coordinating effectively with team members."
+        ],
+        "solutions": [
+          "Used Bootstrap for fast and responsive layout.",
+          "Organized content into easy-to-navigate modules."
+        ],
+        "results": [
+          "Team project for IT education.",
+          "Bootstrap-based UI with educational content.",
+          "Deployed and available online."
+        ],
+        "gallery": []
+      },
+      {
+        "company": "Afar Halk Derneği",
+        "slug": "afar-halk-dernegi",
+        "link": "https://afarhalkdernegi.vercel.app",
+        "year": "2023",
+        "title": "Cultural website for the Afar diaspora",
+        "description": "A website promoting Afar culture and heritage with informational pages, images, and community updates.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Vercel"],
+        "challenges": [
+          "Designing a multi-page site with consistent structure.",
+          "Ensuring good accessibility and smooth navigation."
+        ],
+        "solutions": [
+          "Clean HTML structure with intuitive navigation.",
+          "Optimized for mobile and cross-device usability."
+        ],
+        "results": [
+          "Promotion of Afar culture and heritage.",
+          "Built with a multi-page layout.",
+          "Responsive and accessible design."
+        ],
+        "gallery": []
+      },
+      {
+        "company": "La Fontaine",
+        "slug": "la-fontaine",
+        "link": "https://lafontaine.vercel.app",
+        "year": "2023",
+        "title": "Recipe discovery website",
+        "description": "A culinary discovery platform featuring recipes with a visually appealing layout.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Vercel"],
+        "challenges": [
+          "Presenting recipes in an attractive and clean layout.",
+          "Maintaining fast load times for a better user experience."
+        ],
+        "solutions": [
+          "Optimized static site with elegant layout.",
+          "Simple navigation using pure CSS for better performance."
+        ],
+        "results": [
+          "Elegant layout for discovering new recipes.",
+          "Built with HTML, CSS, and JS.",
+          "Static and fast to load."
+        ],
+        "gallery": []
+      },
+      {
+        "company": "Kyoto",
+        "slug": "kyoto",
+        "link": "https://kyoto.vercel.app",
+        "year": "2023",
+        "title": "Travel guide to Japan",
+        "description": "A lightweight interactive guide showcasing tourist attractions in Kyoto with a visual and simple approach.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Vercel"],
+        "challenges": [
+          "Creating simple and intuitive navigation.",
+          "Displaying a lot of information in a lightweight format."
+        ],
+        "solutions": [
+          "Organized content into sections with anchor navigation.",
+          "Used basic HTML components to ensure fast performance."
+        ],
+        "results": [
+          "Interactive site exploring Kyoto's attractions.",
+          "Built with HTML, CSS, and JS.",
+          "Lightweight and mobile-friendly."
+        ],
+        "gallery": []
+      },
+      {
+        "company": "Calculator",
+        "slug": "calculator",
+        "link": "https://github.com/MOHAMED-ALI-YOUSSOUF/calculator",
+        "year": "2023",
+        "title": "Basic Calculator Web Application",
+        "results": [
+          "Simple and clean calculator design",
+          "Functionalities in pure JavaScript",
+          "Deployed via GitHub Pages"
+        ],
+        "description": "A simple and elegant calculator built in React that allows users to perform basic operations with an intuitive and responsive interface.",
+        "challenges": [
+          "Handling calculation logic without using string evaluators like `eval()`.",
+          "Making the calculator compatible with mobile screens."
+        ],
+        "solutions": [
+          "Custom logic for handling arithmetic operations.",
+          "Responsive design with CSS Flexbox for optimal display on all devices."
+        ],
+        "metrics": {
+          "users": "300+ downloads",
+          "transactions": "N/A",
+          "launchDate": "April 2023"
+        }
+      },
+      {
+        "company": "TODO App",
+        "slug": "todo-app",
+        "link": "https://github.com/MOHAMED-ALI-YOUSSOUF/TODO-APP",
+        "year": "2023",
+        "title": "Minimalist Task Manager",
+        "results": [
+          "Organize tasks with a clear interface",
+          "Built with HTML, CSS, JS",
+          "Source code available on GitHub"
+        ],
+        "description": "A minimalist task management application that allows users to add, delete, and mark tasks as completed.",
+        "challenges": [
+          "Providing smooth state management for tasks added or removed.",
+          "Maintaining a simple and effective UX without overloading the interface."
+        ],
+        "solutions": [
+          "Used React’s `useState` hook for dynamic task list management.",
+          "Clean styling with Tailwind CSS for a clear and fast user experience."
+        ],
+        "metrics": {
+          "users": "500+ downloads",
+          "transactions": "N/A",
+          "launchDate": "May 2023"
+        }
+      }
+    ]
+  }

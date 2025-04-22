@@ -1,10 +1,10 @@
-"use client";
+'use client';
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { useTranslations } from 'next-intl';
 import { HeroOrbit } from "@/components/HeroOrbit";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import Mohamed_Ali_Youssouf from "@/assets/images/mohamed_ali_youssouf.png";
@@ -19,6 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const HeroSection = () => {
   const heroRef = useRef(null);
   const imageRef = useRef(null);
+  const t = useTranslations('heroSection');
 
   useEffect(() => {
     if (!heroRef.current || !imageRef.current) return;
@@ -150,7 +151,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="containe">
+      <div className="container">
         <div className="flex flex-col items-center relative" ref={imageRef}>
           <Image
             src={Mohamed_Ali_Youssouf}
@@ -162,62 +163,54 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full" />
             </div>
-            <div className="text-sm font-medium">Disponible pour de nouveaux projets</div>
+            <div className="text-sm font-medium">{t('availability')}</div>
           </div>
         </div>
 
         <div className="max-w-xl mx-auto text-center mt-8">
-          <h1 className="font-serif text-4xl md:text-5xl tracking-wide">Mohamed Ali Youssouf</h1>
-          <p className="mt-4 text-white/60 md:text-lg">
-            Je transforme les idées en applications web modernes, performantes et élégantes.
-            Discutons de votre prochain projet.
-          </p>
+          <h1 className="font-serif text-4xl md:text-5xl tracking-wide">{t('title')}</h1>
+          <p className="mt-4 text-white/60 md:text-lg">{t('description')}</p>
         </div>
 
         {/* CTA + Social */}
         <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-4">
           <div className="flex items-center gap-4">
-
-        
-          <motion.a
-            href="https://linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            className="text-white hover:text-cyan-500"
-          >
-            <Linkedin size={28} />
-          </motion.a>
-          <motion.a
-            href="https://github.com/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            className="text-white hover:text-cyan-500"
-          >
-            <Github size={28} />
-          </motion.a>
-      
-          <motion.a
-            href="/MOHAMED_ALI_YOUSSOUF_RESUME.pdf"
-            download
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 text-white bg-cyan-600 hover:bg-cyan-700 px-5 py-2 rounded-lg"
-          >
-            <Download size={18} />
-            <span className="text-sm font-semibold">CV</span>
-          </motion.a>
-              </div>
+            <motion.a
+              href="https://linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-white hover:text-cyan-500"
+            >
+              <Linkedin size={28} />
+            </motion.a>
+            <motion.a
+              href="https://github.com/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-white hover:text-cyan-500"
+            >
+              <Github size={28} />
+            </motion.a>
+            <motion.a
+              href="/MOHAMED_ALI_YOUSSOUF_RESUME.pdf"
+              download
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 text-white bg-cyan-600 hover:bg-cyan-700 px-5 py-2 rounded-lg"
+            >
+              <Download size={18} />
+              <span className="text-sm font-semibold">{t('cv')}</span>
+            </motion.a>
+          </div>
 
           <Link href="#projects" className="inline-flex items-center gap-2 px-5 py-2 border rounded-xl text-white">
-            <span className="font-semibold">Voir mes projets</span>
+            <span className="font-semibold">{t('ctaProjects')}</span>
             <ArrowDown className="size-4" />
           </Link>
-
-          
         </div>
       </div>
     </div>

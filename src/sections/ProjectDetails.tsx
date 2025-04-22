@@ -6,12 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import { useLocale, useTranslations } from "next-intl";
 
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProjectDetails = ({ project }) => {
+const ProjectDetails = ({ project }: { project: any }) => {
  
+  const locale = useLocale();
 
   return (
     <section className="py-24 bg-gra-950 text-white"   >
@@ -24,7 +26,7 @@ const ProjectDetails = ({ project }) => {
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
         <p className="text-emerald-300 text-sm uppercase font-semibold">
-          {project.company} • {project.year}
+       {project.company} • {project.year}
         </p>
       </motion.div>
 
@@ -52,14 +54,15 @@ const ProjectDetails = ({ project }) => {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Technologies</h2>
           <ul className="flex flex-wrap gap-3">
-            {project.technologies.map((tech) => (
-              <li
-                key={tech}
-                className="bg-emerald-400/10 border border-emerald-400 hover:bg-emerald-400/50 px-4 py-2 rounded-full text-sm"
-              >
-                {tech}
-              </li>
-            ))}
+                  {Array.isArray(project.technologies) && project.technologies.map((tech) => (
+          <li
+            key={tech}
+            className="bg-emerald-400/10 border border-emerald-400 hover:bg-emerald-400/50 px-4 py-2 rounded-full text-sm"
+          >
+            {tech}
+          </li>
+        ))}
+
           </ul>
         </section>
 
@@ -78,8 +81,8 @@ const ProjectDetails = ({ project }) => {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Results & Metrics</h2>
           <ul className="space-y-2 text-white/80">
-            {project.results.map((r, index) => (
-              <li key={index}>• {r.title}</li>
+            {Array.isArray(project.results) && project.results.map((r, index) => (
+              <li key={index}>• {r}</li>
             ))}
           </ul>
         </section>
@@ -95,7 +98,7 @@ const ProjectDetails = ({ project }) => {
             <ArrowUpRight className="w-4 h-4" />
           </a>
           <a
-            href="/projects"
+            href={`/${locale}/projects`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition"
           >
            Projects

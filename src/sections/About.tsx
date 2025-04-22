@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 import Card from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -38,19 +39,20 @@ const toolboxItems = [
   { title: "Git", iconType: GitIcon },
 ];
 
-const hobbies = [
-  { title: "Apprendre les langues", emoji: "🗣️", left: "5%", top: "5%" },
-  { title: "Créer des projets", emoji: "🛠️", left: "50%", top: "5%" },
-  { title: "Partage de savoir", emoji: "📚", left: "35%", top: "40%" },
-  { title: "Technologie", emoji: "💻", left: "10%", top: "35%" },
-  { title: "Voyager", emoji: "✈️", left: "70%", top: "45%" },
-  { title: "Entrepreneuriat", emoji: "📈", left: "5%", top: "65%" },
-  { title: "Lecture", emoji: "📖", left: "45%", top: "70%" },
+const hobbyPositions = [
+  { left: "5%", top: "5%" },
+  { left: "50%", top: "5%" },
+  { left: "35%", top: "40%" },
+  { left: "10%", top: "35%" },
+  { left: "70%", top: "45%" },
+  { left: "5%", top: "65%" },
+  { left: "45%", top: "70%" },
 ];
 
 export const AboutSection = () => {
   const constraintRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef(null);
+  const t = useTranslations("aboutSection");
 
   useEffect(() => {
     const elements = sectionRef.current?.querySelectorAll(".about-card");
@@ -79,69 +81,47 @@ export const AboutSection = () => {
 
   return (
     <section ref={sectionRef} className="py-20 lg:py-28" id="about">
-      <div className="container about-card bg-black/20 rounded-2xl py-5">
+      <div className="sm:container about-card bg-black/20 rounded-2xl py-5">
         <SectionHeader
-          eyebrow="À propos de moi"
-          title="Mon parcours, ma passion"
-          description="Un développeur frontend passionné, originaire de Dorra, avec des rêves mondiaux et des projets bien ancrés dans l’Afrique."
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("description")}
         />
 
         <div className="mt-20 flex flex-col gap-8">
-        <div className="grid grid-cols-1 about-card">
-          <Card>
-            <Card.Header
-              title="Qui je suis"
-              description="Un aperçu de mon parcours professionnel et de ce qui m’anime."
-            />
-            <div className="px-6 pb-6 text-base leading-relaxed text-gray-200">
-              <p className="mb-4">
-                Je m'appelle <strong>Mohamed Ali Youssouf</strong>, développeur frontend
-                spécialisé dans la création d’expériences digitales modernes, intuitives et
-                centrées sur l’utilisateur. Fort d’un master en ingénierie informatique,
-                j’ai travaillé sur plusieurs projets qui m’ont permis de développer des
-                compétences techniques et créatives, tout en répondant aux besoins spécifiques
-                des clients et des utilisateurs.
-              </p>
-              <p className="mb-4">
-                Je suis passionné par le développement web car il me permet de transformer des idées
-                en solutions concrètes et fonctionnelles. Ce que j’aime le plus, c’est résoudre
-                des problèmes complexes avec des interfaces simples et élégantes. Pour moi,
-                chaque ligne de code doit améliorer l’expérience utilisateur.
-              </p>
-              <p>
-                Je suis constamment à la recherche de nouvelles opportunités pour contribuer
-                à des projets à impact et continuer à progresser dans le domaine du développement web.
-              </p>
-            </div>
-          </Card>
-        </div>
-        <div className="grid grid-cols-1 about-card">
-  <Card>
-    <Card.Header
-      title="Certificat"
-      description="Ma formation en développement frontend chez TechPro Education."
-    />
-    <div className="px-6 pb-6 text-base leading-relaxed text-gray-200">
-      <p className="mb-4">
-        J’ai obtenu un <strong>certificat de développeur frontend</strong> à l’issue d’une formation intensive
-        en ligne avec <strong>TechPro Education</strong>. Cette formation m’a permis de maîtriser des technologies clés
-        comme <em>HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS</em> et bien d’autres outils modernes
-        du développement web.
-      </p>
-      <p>
-        Grâce à cette certification, j’ai renforcé mes compétences techniques et consolidé ma capacité
-        à livrer des projets complets, performants et bien structurés.
-      </p>
-    </div>
-  </Card>
-</div>
+          <div className="grid grid-cols-1 about-card">
+            <Card>
+              <Card.Header
+                title={t("whoIAm.title")}
+                description={t("whoIAm.description")}
+              />
+              <div className="px-6 pb-6 text-base leading-relaxed text-gray-200">
+                {t.raw("whoIAm.content").map((paragraph: string, index: number) => (
+                  <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                ))}
+              </div>
+            </Card>
+          </div>
 
-          {/* Toolbox */}
+          <div className="grid grid-cols-1 about-card">
+            <Card>
+              <Card.Header
+                title={t("certificate.title")}
+                description={t("certificate.description")}
+              />
+              <div className="px-6 pb-6 text-base leading-relaxed text-gray-200">
+                {t.raw("certificate.content").map((paragraph: string, index: number) => (
+                  <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
+                ))}
+              </div>
+            </Card>
+          </div>
+
           <div className="grid grid-cols-1 about-card">
             <Card className="h-[320px]">
               <Card.Header
-                title="Ma boîte à outils"
-                description="Les technologies que j’utilise pour construire des expériences digitales."
+                title={t("toolbox.title")}
+                description={t("toolbox.description")}
               />
               <ToolboxItems
                 items={toolboxItems}
@@ -155,33 +135,30 @@ export const AboutSection = () => {
             </Card>
           </div>
 
-          {/* Hobbies + Carte */}
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8">
-            {/* Hobbies */}
             <Card className="h-[320px] flex flex-col md:col-span-3 lg:col-span-2 about-card">
               <Card.Header
-                title="En dehors du code"
-                description="Découvre mes passions qui nourrissent ma créativité."
+                title={t("hobbies.title")}
+                description={t("hobbies.description")}
                 className="px-6 py-6"
               />
               <div ref={constraintRef} className="relative flex-1">
-                {hobbies.map(({ title, emoji, top, left }) => (
+                {t.raw("hobbies.items").map(({ title, emoji }: { title: string; emoji: string }, index: number) => (
                   <motion.div
                     key={title}
                     className="inline-flex items-center gap-2 py-1.5 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full absolute shadow-lg cursor-move"
-                    style={{ top, left }}
+                    style={{ top: hobbyPositions[index].top, left: hobbyPositions[index].left }}
                     drag
                     dragConstraints={constraintRef}
                     whileHover={{ scale: 1.05 }}
                   >
-                    <span className="font-medium text-gray-950 ">{title}</span>
+                    <span className="font-medium text-gray-950">{title}</span>
                     <span>{emoji}</span>
                   </motion.div>
                 ))}
               </div>
             </Card>
 
-            {/* Image & localisation */}
             <Card className="h-[320px] relative md:col-span-2 lg:col-span-1 about-card">
               <Image
                 src={mapImage}

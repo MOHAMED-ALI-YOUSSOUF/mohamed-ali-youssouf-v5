@@ -1,5 +1,7 @@
-import { Fragment } from "react";
+"use client";
+import { Fragment, useEffect } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl"; // Import de useTranslations
 
 import { SectionHeader } from "@/components/SectionHeader";
 import Card from "@/components/Card";
@@ -9,8 +11,9 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import { UserIcon } from "lucide-react";
 
-const testimonials = [
+const testimonial = [
   {
     name: "Équipe de Rohaty.com",
     position: "Marketplace pour vendeurs locaux",
@@ -43,21 +46,42 @@ const testimonials = [
   }
 ];
 
-
 export const TestimonialsSection = () => {
+  const t = useTranslations("testimonialsSection"); // Utilisation de useTranslations pour gérer les traductions
+  const tRoot = useTranslations();
+  const testimonials= Array.isArray(tRoot.raw('testimonialsSection.testimonials'))
+    ? tRoot.raw('testimonialsSection.testimonials')
+    : [];
+  
+  // Vérifiez que words est un tableau avant de le parcourir
+  const testimonialsList = Array.isArray(testimonials) ? testimonials : [];
+  useEffect(() => {
+    const element = document.getElementById("elementId");
+    if (element) {
+      // Manipulation sûre du DOM
+      element.removeChild(childElement);
+    }
+  }, []);
+  
+
+
   return (
     <section className="py-16 lg:py-24">
-      <div className="container">
-        <SectionHeader eyebrow="Happy Clients" title="What Clients Say about Me" description="Don&apos;t just take my word for it. See what my clients have to say about my work." />
+      <div className="sm:container">
+        <SectionHeader
+          eyebrow={t("eyebrow")} // Traduction du titre "Happy Clients"
+          title={t("title")} // Traduction du titre "What Clients Say about Me"
+          description={t("description")} // Traduction de la description
+        />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           <div className="flex gap-8 flex-none animate-move-left [animation-duration:90s] pr-8 hover:[animation-play-state:paused]">
-            {[...new Array(2).fill(0).map((_, index) => (
+            {[...new Array(2).fill(0)].map((_, index) => (
               <Fragment key={index}>
-                {testimonials.map((testimonial) => (
+                {testimonialsList.map((testimonial) => (
                   <Card key={`${testimonial.name}-${index}`} className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300 cursor-default">
                     <div className="flex gap-4 items-center">
                       <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                        <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
+                      <UserIcon className="text-white w-6 h-6" />
                       </div>
                       <div>
                         <div className="font-semibold">{testimonial.name}</div>
@@ -68,8 +92,7 @@ export const TestimonialsSection = () => {
                   </Card>
                 ))}
               </Fragment>
-            ))]}
-
+            ))}
           </div>
         </div>
       </div>

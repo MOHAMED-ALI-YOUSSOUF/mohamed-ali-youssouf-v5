@@ -1,29 +1,32 @@
-"use client"
+"use client";
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
+
+import { SectionHeader } from "@/components/SectionHeader";
+import CheckCircleIcon from "@/assets/icons/check-circle.svg";
+import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import { SectionHeader } from "@/components/SectionHeader";
-
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
-import { portfolioProjects } from "@/lib/constant";
-
-
-const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
-
- const ProjectsSection = () => {
+const ProjectsPage = () => {
+   const t = useTranslations('projectsSection');
+    const tRoot = useTranslations();
+    const projects= Array.isArray(tRoot.raw('portfolioProjects'))
+      ? tRoot.raw('portfolioProjects')
+      : [];
   const [selectedYear, setSelectedYear] = useState("All");
   const sectionRef = useRef(null);
 
+  const uniqueYears = [...new Set(projects.map((p) => p.year))];
+
   const filteredProjects =
     selectedYear === "All"
-      ? portfolioProjects
-      : portfolioProjects.filter((p) => p.year === selectedYear);
+      ? projects
+      : projects.filter((p) => p.year === selectedYear);
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -55,11 +58,8 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
   }, [filteredProjects]);
 
   return (
-    <section
-      ref={sectionRef}
-      className="py-24  "
-    >
-      <div className="containe bg-black/50 p-8 rounded-3xl">
+    <section ref={sectionRef} className="py-24">
+      <div className="sm:container bg-black/50 p-8 rounded-3xl">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,9 +68,9 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
           className="project-card"
         >
           <SectionHeader
-            eyebrow="Real-world Results"
-            title="Featured Projects"
-            description="Explore impactful digital solutions crafted with passion."
+            eyebrow={t("eyebrow")}
+            title={t("projects")}
+            description={t("description")}
           />
         </motion.div>
 
@@ -89,7 +89,7 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
             }`}
             onClick={() => setSelectedYear("All")}
           >
-            All
+           All
           </button>
           {uniqueYears.map((year) => (
             <button
@@ -106,7 +106,7 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
           ))}
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5  gap-12 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
           {filteredProjects.map((project) => (
             <motion.div
               key={project.title}
@@ -115,7 +115,6 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.div
-               
                 className="relative h-64 overflow-hidden"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
@@ -149,9 +148,9 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
                   {project.title}
                 </motion.h3>
                 <ul className="mt-4 flex flex-col gap-2">
-                  {project.results.map((result) => (
+                  {project.results.map((result: any, index: number) => (
                     <motion.li
-                      key={result.title}
+                      key={index}
                       className="flex items-start gap-2 text-white/70 text-sm"
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -159,39 +158,33 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
                       transition={{ duration: 0.5 }}
                     >
                       <CheckCircleIcon className="mt-1 size-5 text-emerald-300" />
-                      {result.title}
+                      {typeof result === "string" ? result : result.title}
                     </motion.li>
                   ))}
                 </ul>
                 <div className="flex justify-between gap-4 mt-6">
-                    {/* View Detail Button */}
-                    <motion.a
-                      href={`/projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`} // Utilisation du titre du projet comme slug
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 text-gray-900 font-semibold rounded-xl hover:bg-emerald-300 transition-all duration-300 transform hover:scale-105"
-                      whileHover={{ scale: 1.05 }}
-                      rel="noopener noreferrer"
-                    >
-                      <span></span>
-                      <span className="hidden lg:inline">View Detail</span>
-                      <span className="md:hidden inline ">  View </span>
-                      <span className="lg:hidden inline">  Detail </span>
-                      <ArrowUpRight className="size-4" />
-                    </motion.a>
+                  <motion.a
+                    href={`/projects/${project.slug ?? project.title.replace(/\s+/g, "-").toLowerCase()}`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 text-gray-900 font-semibold rounded-xl hover:bg-emerald-300 transition-all duration-300 transform hover:scale-105"
+                    whileHover={{ scale: 1.05 }}
+                    rel="noopener noreferrer"
+                  > <span className="hidden lg:inline"> {t('viewDetail')}</span>
+                    <span className="lg:hidden inline">{t('detail')}</span>
+                    <ArrowUpRight className="size-4" />
+                  </motion.a>
 
-                    {/* Visit Live Site Button */}
-                    <motion.a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-300 to-sky-400  text-gray-900 font-semibold rounded-xl hover:bg-emerald-300 transition-all duration-300 transform hover:scale-105 "
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      <span className="hidden lg:inline">Visit Live Site</span>
-                      <span className="lg:hidden inline"> Live </span>
-                      <ArrowUpRight className="size-4" />
-                    </motion.a>
-                  </div>
-      
+                  <motion.a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 font-semibold rounded-xl hover:bg-emerald-300 transition-all duration-300 transform hover:scale-105"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <span className="hidden lg:inline"> {t('liveSite')}</span>
+                    <span className="lg:hidden inline">{t('live')}</span>
+                    <ArrowUpRight className="size-4" />
+                  </motion.a>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -200,5 +193,5 @@ const uniqueYears = [...new Set(portfolioProjects.map((p) => p.year))];
     </section>
   );
 };
-export default ProjectsSection;
 
+export default ProjectsPage;

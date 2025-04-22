@@ -10,13 +10,25 @@ gsap.registerPlugin(ScrollTrigger);
 import { SectionHeader } from "@/components/SectionHeader";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
-import { portfolioProjects } from "@/lib/constant";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
+interface Project {
+  company: string;
+  year: string;
+  title: string;
+  results: string[];
+  liveSite?: string;
+}
 export const ProjectsSection = () => {
   const sectionRef = useRef(null);
-  const limitedProjects = portfolioProjects.slice(0, 6);
+  const t = useTranslations('projectsSection');
+  const tRoot = useTranslations();
+  const projects: Project[] = Array.isArray(tRoot.raw('portfolioProjects'))
+    ? tRoot.raw('portfolioProjects').slice(0, 6)
+    : [];
 
+  
   useEffect(() => {
     if (!sectionRef.current) return;
 
@@ -45,10 +57,17 @@ export const ProjectsSection = () => {
       );
     });
   }, []);
+  useEffect(() => {
+    const element = document.getElementById("elementId");
+    if (element) {
+      // Manipulation sûre du DOM
+      element.removeChild(childElement);
+    }
+  }, []);
 
   return (
     <section ref={sectionRef} className="py-24" id="projects">
-      <div className="container bg-black/20  p-8 rounded-3xl">
+      <div className="sm:container bg-black/20  p-8 rounded-3xl">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,14 +76,14 @@ export const ProjectsSection = () => {
           className="project-card"
         >
           <SectionHeader
-            eyebrow="Real-world Results"
-            title="Featured Projects"
-            description="Explore impactful digital solutions crafted with passion."
+           eyebrow={t('eyebrow')}
+           title={t('title')}
+           description={t('description')}
           />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2  gap-12 mt-16">
-          {limitedProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               key={project.title}
               className="bg-gray-800 rounded-3xl overflow-hidden shadow-xl group project-card border p-3"
@@ -91,21 +110,21 @@ export const ProjectsSection = () => {
                 <ul className="mt-4 flex flex-col gap-2">
                   {project.results.slice(0, 2).map((result) => (
                     <li
-                      key={result.title}
+                      key={result}
                       className="flex items-start gap-2 text-white/70 text-sm"
                     >
                       <CheckCircleIcon className="mt-1 size-5 text-emerald-300" />
-                      {result.title}
+                      {result}
                     </li>
                   ))}
                 </ul>
                 <div className="flex justify-between gap-4 mt-6">
                   <motion.a
-                    href={`/projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`}
+                    href={`/projects/${project.slug}`}
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/80 text-gray-900 font-semibold rounded-xl hover:bg-emerald-300 transition-all duration-300 transform hover:scale-105"
                   >
-                    <span className="hidden lg:inline">View Detail</span>
-                    <span className="lg:hidden inline">Detail</span>
+                    <span className="hidden lg:inline"> {t('viewDetail')}</span>
+                    <span className="lg:hidden inline"> {t('detail')}</span>
                     <ArrowUpRight className="size-4" />
                   </motion.a>
 
@@ -115,8 +134,8 @@ export const ProjectsSection = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
                   >
-                    <span className="hidden lg:inline">Live Site</span>
-                    <span className="lg:hidden inline">Live</span>
+                    <span className="hidden lg:inline"> {t('liveSite')}</span>
+                    <span className="lg:hidden inline">{t('live')}</span>
                     <ArrowUpRight className="size-4" />
                   </motion.a>
                 </div>
@@ -129,7 +148,7 @@ export const ProjectsSection = () => {
         <div className="mt-12 text-center">
           <Link href="/projects">
             <div className="inline-block px-6 py-3 bg-emerald-400 text-gray-900 font-bold rounded-full hover:bg-emerald-300 transition transform hover:scale-105 duration-300">
-              Voir tous les projets
+             {t('viewAll')}
             </div>
           </Link>
         </div>

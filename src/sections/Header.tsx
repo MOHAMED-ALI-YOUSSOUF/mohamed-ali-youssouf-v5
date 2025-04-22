@@ -15,7 +15,10 @@ export const Header = () => {
 
 
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
+    <div className="flex justify-center items-center fixed top-3 w-full z-10 ">
+      <div className="relative">
+
+    
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         <a href={`/${locale}#`} className="nav-item">{t('home')}</a>
 
@@ -27,9 +30,17 @@ export const Header = () => {
 
         <a href={`/${locale}#about`} className="nav-item">{t('about')}</a>
         <a href={`/${locale}#contact`} className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900">{t('contact')}</a>
+    
+      <div className="hidden md:block">
+
         <LanguageSwitchDropdown />
-        {/* <LocaleSwitcher /> */}
-      </nav>
+        </div>
+     </nav>
+      <div className="absolute right-0 top-12 md:hidden">
+
+        <LanguageSwitchDropdown />
+      </div>
+        </div>
     </div>
   );
 };

@@ -15,12 +15,12 @@
   "aboutSection": {
     "eyebrow": "À propos de moi",
     "title": "Mon parcours, ma passion",
-    "description": "Un développeur web, specialisé en Frontend, un passionné de technologie et d'innovation",
+    "description": "Un développeur web, spécialisé en Frontend, passionné par la technologie et d'innovation",
     "whoIAm": {
       "title": "Qui je suis",
       "description": "Un aperçu de mon parcours professionnel et de ce qui m’anime.",
       "content": [
-        "Je m'appelle <strong>Mohamed Ali Youssouf</strong>, développeur web, specialisé en Frontend avec une passion pour la technologie et l’innovation. Je suis enthousiasmé dans la création d’expériences digitales modernes, intuitives et centrées sur l’utilisateur. Fort d’un master en ingénierie informatique, j’ai travaillé sur plusieurs projets qui m’ont permis de développer des compétences techniques et créatives, tout en répondant aux besoins spécifiques des clients et des utilisateurs.",
+        "Je m'appelle <strong>Mohamed Ali Youssouf</strong>, développeur web,  spécialisé en Frontend, passionné par la technologie et l’innovation. Je suis enthousiaste à l’idée de créer des expériences digitales modernes, intuitives et centrées sur l’utilisateur. Titulaire d’un master en ingénierie informatique, j’ai travaillé sur plusieurs projets qui m’ont permis de développer à la fois des compétences techniques et créatives, tout en répondant aux besoins spécifiques des clients et des utilisateurs.",
         "Je suis passionné par le développement web car il me permet de transformer des idées en solutions concrètes et fonctionnelles. Ce que j’aime le plus, c’est résoudre des problèmes complexes avec des interfaces simples et élégantes. Pour moi, chaque ligne de code doit améliorer l’expérience utilisateur.",
         "Je suis constamment à la recherche de nouvelles opportunités pour contribuer à des projets à impact et continuer à progresser dans le domaine du développement web."
       ]

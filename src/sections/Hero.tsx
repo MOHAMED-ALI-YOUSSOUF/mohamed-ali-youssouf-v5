@@ -151,7 +151,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container">
+      <div className="sm:container">
         <div className="flex flex-col items-center relative" ref={imageRef}>
           <Image
             src={Mohamed_Ali_Youssouf}

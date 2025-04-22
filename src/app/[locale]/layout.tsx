@@ -32,7 +32,7 @@ export default async function RootLayout({
     notFound();
   }
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <body
         className={cn(
           inter.variable,
@@ -49,6 +49,7 @@ export default async function RootLayout({
             playsInline
             className="fixed top-0 left-0 w-full h-full object-cover -z-10"
           >
+             <source src="/10.webm" type="video/webm" />
             <source src="/10.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

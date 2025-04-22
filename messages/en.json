@@ -131,38 +131,63 @@
         "company": "Rohaty.com",
         "slug": "rohaty",
         "link": "https://rohaty.com",
+        "image": "/images/projects/rohaty.png",
         "year": "2025",
-        "title": "Online Marketplace for Djibouti",
+        "title": "Full E-commerce Marketplace for Djibouti",
         "results": [
-          "Enable local sellers to showcase their products",
-          "Simple payment via WhatsApp",
-          "Built with Next.js, Sanity, and Clerk"
+          "Complete online ordering and checkout system",
+          "Simplified payments and communication via WhatsApp",
+          "Built with Next.js, TypeScript, Sanity, Tailwind CSS, Shadcn, NextAuth, and Resend"
         ],
-        "description": "Rohaty.com is a dynamic online marketplace designed to support local artisans and businesses in Djibouti by providing a platform to showcase and sell their products globally. The platform integrates a WhatsApp payment system tailored to local market preferences.",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Sanity",
+          "Tailwind CSS",
+          "Shadcn",
+          "NextAuth",
+          "Resend"
+        ],
+        "description": "Rohaty.com is a modern and user-friendly online marketplace built to connect sellers and buyers in Djibouti. It enables vendors to manage products and orders seamlessly, while customers enjoy a smooth shopping experience enhanced by WhatsApp integration for order finalization and support.",
         "challenges": [
-          "Integrating WhatsApp as a payment system for a seamless user experience.",
-          "Ensuring scalability for a growing number of sellers and customers."
+          "Creating a full-featured e-commerce system in a market with limited digital payment infrastructure.",
+          "Implementing secure user authentication and scalable order management."
         ],
         "solutions": [
-          "Developed a custom WhatsApp API integration for order processing.",
-          "Utilized Sanity’s flexible CMS for dynamic content management."
+          "Developed a complete cart and ordering flow integrated with WhatsApp for localized payment handling.",
+          "Integrated NextAuth for secure authentication and user session management.",
+          "Used Sanity as a flexible and scalable CMS for dynamic content control.",
+          "Implemented Resend for transactional emails like order confirmations and vendor alerts."
         ],
         "metrics": {
           "users": "10,000+ monthly active users",
-          "transactions": "5,000+ monthly transactions",
+          "transactions": "5,000+ monthly orders",
           "launchDate": "January 2025"
         }
       },
+      
       {
         "company": "AI Interview Prep",
         "slug": "ai-interview-prep",
         "link": "https://ai-interview-prep.vercel.app",
+        "image": "/images/projects/ai-interview-prep.png",
         "year": "2025",
         "title": "AI-Based Interview Preparation Tool",
         "results": [
           "Interactive AI-driven mock interviews",
           "Personalized feedback and tailored question sets",
           "Hosted on Vercel with Next.js"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Firebase",
+          "Gemini ai",
+          "Vapi.ai"
         ],
         "description": "AI Interview Prep is an innovative platform that uses AI to simulate realistic job interviews, providing users with personalized feedback and tailored question sets to improve their performance. The tool is designed to help job seekers excel in technical and behavioral interviews.",
         "challenges": [
@@ -180,41 +205,23 @@
         }
       },
       {
-        "company": "DjibTicket",
-        "slug": "djibticket",
-        "link": "https://djibticket.vercel.app",
-        "year": "2025",
-        "title": "Ticketing Platform for Djibouti",
-        "results": [
-          "Users can search and book tickets online",
-          "Built with Convex and Next.js",
-          "Modern interface with dynamic filtering"
-        ],
-        "description": "DjibTicket is an online ticketing platform designed to simplify ticket sales and bookings for events in Djibouti. It allows users to search, filter, and book tickets with ease.",
-        "challenges": [
-          "Providing fast and efficient search within an event database.",
-          "Creating a seamless interface for ticket display and booking."
-        ],
-        "solutions": [
-          "Used Convex for real-time, high-performance search.",
-          "Modern interface with dynamic filtering and reusable components."
-        ],
-        "metrics": {
-          "users": "1,000+ users in testing",
-          "transactions": "100+ bookings recorded",
-          "launchDate": "April 2025"
-        }
-      },
-      {
         "company": "PrimoAfrikanet",
-        "year": "2024",
+        "year": "2025",
         "slug": "primoafrikanet",
         "link": "https://primoafrikanet.com/en",
+        "image": "/images/projects/primoafrikanet.png",
         "title": "Consulting Platform for Africans in Turkey",
         "results": [
           "Connects entrepreneurs to Turkish market opportunities",
           "Showcases events and consulting services",
           "Built with a professional CMS and responsive design"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn"
         ],
         "description": "PrimoAfrikanet is a consulting platform dedicated to Africans in Turkey, connecting entrepreneurs with local opportunities through consulting services, events, and training.",
         "challenges": [
@@ -232,15 +239,85 @@
         }
       },
       {
+        "company": "Djibstudy",
+        "slug": "djibstudy",
+        "link": "https://djibstudy.com",
+        "image": "/images/projects/djibstudy.png",
+        "year": "2024",
+        "title": "Educational Platform for Djiboutian Students",
+        "results": [
+          "Resources and guidance for students",
+          "Custom blog and learning features",
+          "Hosted on djibstudy.com"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn"
+        ],
+        "description": "Djibstudy is an educational platform offering free resources, career guidance, and blog articles to support Djiboutian students in their academic journey.",
+        "challenges": [
+          "Regularly curating relevant content for students.",
+          "Maintaining a simple design while integrating learning features."
+        ],
+        "solutions": [
+          "Custom blog system for publishing educational content.",
+          "Accessible and structured design for easy navigation."
+        ],
+        "metrics": {
+          "users": "2,000+ monthly visitors",
+          "transactions": "N/A",
+          "launchDate": "January 2024"
+        }
+      },
+      {
+        "company": "Saleh Ismael Portfolio",
+        "slug": "salehismael",
+        "link": "https://salehismael.com",
+        "image": "/images/projects/salehismael.png",
+        "year": "2024",
+        "title": "Modern portfolio website",
+        "description": "A professional portfolio built for a frontend developer to showcase projects, skills, and experience.",
+        "technologies": ["React.js", "Tailwind CSS", "Vercel"],
+        "challenges": [
+          "Creating a smooth and animated user experience while keeping performance high.",
+          "Ensuring perfect mobile responsiveness."
+        ],
+        "solutions": [
+          "Used Framer Motion for smooth animations.",
+          "Implemented responsive grid layout with Tailwind."
+        ],
+        "results": [
+          "Animated and engaging project showcase.",
+          "User-friendly and responsive design.",
+          "Fast loading thanks to static deployment."
+        ],
+        "gallery": []
+      },
+    
+     
+      {
         "company": "Djib Market",
         "slug": "djibmarket",
         "link": "https://djib-market.vercel.app",
+        "image": "/images/projects/djib-market.png",
         "year": "2024",
-        "title": "Multi-Vendor E-commerce for Djibouti",
+        "title": " E-commerce amazon clone",
         "results": [
           "Vendors can create their online stores",
           "Product catalog with inventory management",
           "Deployed on Vercel"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "MongoDB",
+          "Next-auth"
         ],
         "description": "Djib Market is a multi-vendor e-commerce platform for Djiboutian merchants. Each vendor can create and manage their own online store with an intuitive interface.",
         "challenges": [
@@ -258,15 +335,87 @@
         }
       },
       {
+        "company": "Afar Halk Derneği",
+        "slug": "afar-halk-dernegi",
+        "link": "https://afarhalkdernegi.vercel.app",
+        "image": "/images/projects/afarhalkdernegi.png",
+        "year": "2023",
+        "title": "Cultural website for the Afar diaspora",
+        "description": "A website promoting Afar culture and heritage with informational pages, images, and community updates.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Vercel"],
+        "challenges": [
+          "Designing a multi-page site with consistent structure.",
+          "Ensuring good accessibility and smooth navigation."
+        ],
+        "solutions": [
+          "Clean HTML structure with intuitive navigation.",
+          "Optimized for mobile and cross-device usability."
+        ],
+        "results": [
+          "Promotion of Afar culture and heritage.",
+          "Built with a multi-page layout.",
+          "Responsive and accessible design."
+        ],
+        "gallery": []
+      },
+     
+      {
+        "company": "DjibTicket",
+        "slug": "djibticket",
+        "link": "https://djibticket.vercel.app",
+        "image": "/images/projects/djibticket.png",
+        "year": "2025",
+        "title": "Ticketing Platform for Djibouti",
+        "results": [
+          "Users can search and book tickets online",
+          "Built with Convex and Next.js",
+          "Modern interface with dynamic filtering"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Convex",
+          "Next-auth"
+        ],
+        "description": "DjibTicket is an online ticketing platform designed to simplify ticket sales and bookings for events in Djibouti. It allows users to search, filter, and book tickets with ease.",
+        "challenges": [
+          "Providing fast and efficient search within an event database.",
+          "Creating a seamless interface for ticket display and booking."
+        ],
+        "solutions": [
+          "Used Convex for real-time, high-performance search.",
+          "Modern interface with dynamic filtering and reusable components."
+        ],
+        "metrics": {
+          "users": "1,000+ users in testing",
+          "transactions": "100+ bookings recorded",
+          "launchDate": "April 2025"
+        }
+      },
+      {
         "company": "LMS Djibstudy",
         "year": "2024",
         "slug": "lms-djibstudy",
         "link": "https://lms-djibstudy.vercel.app",
+        "image": "/images/projects/lms-djibstudy.png",
         "title": "Learning Platform for Djiboutian Students",
         "results": [
           "Video courses, quizzes, and progress tracking",
           "Intuitive interface for learners",
           "Built with Next.js and Tailwind"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "sanity",
+          "clerk",
+          "Vercel"
         ],
         "description": "A simple yet effective LMS (Learning Management System) for Djiboutian students. It provides a structured educational experience with videos, quizzes, and learning resources.",
         "challenges": [
@@ -289,10 +438,20 @@
         "link": "https://startup.vercel.app",
         "year": "2024",
         "title": "Showcase Site for Tech Startup",
+        "image": "/images/projects/startup.png",
         "results": [
           "Modern and responsive landing page",
           "Animations and clear calls to action",
           "Built with Tailwind CSS and React"
+        ],
+        "technologies": [
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Framer Motion",
+          "Auth",
+          "Vercel"
         ],
         "description": "A professional landing page designed to showcase a tech startup, featuring an attractive design, modern animations, and a layout optimized for conversion.",
         "challenges": [
@@ -313,12 +472,21 @@
         "company": "Personal Budget Tracker",
         "slug": "budget-tracker",
         "link": "https://personal-budget-tracker-bay.vercel.app/",
+        "image": "/images/projects/personal-budget-tracker.png",
         "year": "2024",
         "title": "Financial Management Web Application",
         "results": [
           "Track income and expenses with interactive charts",
           "Gain insights into spending patterns",
           "Built with React and Chart.js"
+        ],
+        "technologies": [
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Chart.js",
+          "Vercel"
         ],
         "description": "Personal Budget Tracker is a simple and interactive web application that allows users to track their personal finances through charts and visual reports.",
         "challenges": [
@@ -335,59 +503,13 @@
           "launchDate": "March 2024"
         }
       },
-      {
-        "company": "Djibstudy",
-        "slug": "djibstudy",
-        "link": "https://djibstudy.com",
-        "year": "2024",
-        "title": "Educational Platform for Djiboutian Students",
-        "results": [
-          "Resources and guidance for students",
-          "Custom blog and learning features",
-          "Hosted on djibstudy.com"
-        ],
-        "description": "Djibstudy is an educational platform offering free resources, career guidance, and blog articles to support Djiboutian students in their academic journey.",
-        "challenges": [
-          "Regularly curating relevant content for students.",
-          "Maintaining a simple design while integrating learning features."
-        ],
-        "solutions": [
-          "Custom blog system for publishing educational content.",
-          "Accessible and structured design for easy navigation."
-        ],
-        "metrics": {
-          "users": "2,000+ monthly visitors",
-          "transactions": "N/A",
-          "launchDate": "January 2024"
-        }
-      },
-      {
-        "company": "Saleh Ismael Portfolio",
-        "slug": "salehismael",
-        "link": "https://salehismael.com",
-        "year": "2023",
-        "title": "Modern portfolio website",
-        "description": "A professional portfolio built for a frontend developer to showcase projects, skills, and experience.",
-        "technologies": ["React.js", "Tailwind CSS", "Vercel"],
-        "challenges": [
-          "Creating a smooth and animated user experience while keeping performance high.",
-          "Ensuring perfect mobile responsiveness."
-        ],
-        "solutions": [
-          "Used Framer Motion for smooth animations.",
-          "Implemented responsive grid layout with Tailwind."
-        ],
-        "results": [
-          "Animated and engaging project showcase.",
-          "User-friendly and responsive design.",
-          "Fast loading thanks to static deployment."
-        ],
-        "gallery": []
-      },
+     
+     
       {
         "company": "IT Mastery",
         "slug": "it-mastery",
         "link": "https://it-mastery.vercel.app",
+        "image": "/images/projects/itmastery.png",
         "year": "2023",
         "title": "Educational platform built with React",
         "description": "A team project focused on delivering accessible IT education through a simple and structured interface.",
@@ -407,33 +529,12 @@
         ],
         "gallery": []
       },
-      {
-        "company": "Afar Halk Derneği",
-        "slug": "afar-halk-dernegi",
-        "link": "https://afarhalkdernegi.vercel.app",
-        "year": "2023",
-        "title": "Cultural website for the Afar diaspora",
-        "description": "A website promoting Afar culture and heritage with informational pages, images, and community updates.",
-        "technologies": ["HTML", "CSS", "JavaScript", "Vercel"],
-        "challenges": [
-          "Designing a multi-page site with consistent structure.",
-          "Ensuring good accessibility and smooth navigation."
-        ],
-        "solutions": [
-          "Clean HTML structure with intuitive navigation.",
-          "Optimized for mobile and cross-device usability."
-        ],
-        "results": [
-          "Promotion of Afar culture and heritage.",
-          "Built with a multi-page layout.",
-          "Responsive and accessible design."
-        ],
-        "gallery": []
-      },
+     
       {
         "company": "La Fontaine",
         "slug": "la-fontaine",
         "link": "https://lafontaine.vercel.app",
+        "image": "/images/projects/la-fontaine.png",
         "year": "2023",
         "title": "Recipe discovery website",
         "description": "A culinary discovery platform featuring recipes with a visually appealing layout.",
@@ -457,6 +558,7 @@
         "company": "Kyoto",
         "slug": "kyoto",
         "link": "https://kyoto.vercel.app",
+        "image": "/images/projects/kyoto.png",
         "year": "2023",
         "title": "Travel guide to Japan",
         "description": "A lightweight interactive guide showcasing tourist attractions in Kyoto with a visual and simple approach.",
@@ -480,6 +582,7 @@
         "company": "Calculator",
         "slug": "calculator",
         "link": "https://github.com/MOHAMED-ALI-YOUSSOUF/calculator",
+        "image": "/images/projects/calculator.png",
         "year": "2023",
         "title": "Basic Calculator Web Application",
         "results": [
@@ -487,6 +590,7 @@
           "Functionalities in pure JavaScript",
           "Deployed via GitHub Pages"
         ],
+        "technologies": ["React", "CSS", "JavaScript", "GitHub Pages"],
         "description": "A simple and elegant calculator built in React that allows users to perform basic operations with an intuitive and responsive interface.",
         "challenges": [
           "Handling calculation logic without using string evaluators like `eval()`.",
@@ -505,7 +609,8 @@
       {
         "company": "TODO App",
         "slug": "todo-app",
-        "link": "https://github.com/MOHAMED-ALI-YOUSSOUF/TODO-APP",
+        "link": "https://github.com/MOHAMED-ALI-YOUSSOUF/Todo.app",
+        "image": "/images/projects/todo-app.png",
         "year": "2023",
         "title": "Minimalist Task Manager",
         "results": [
@@ -513,6 +618,7 @@
           "Built with HTML, CSS, JS",
           "Source code available on GitHub"
         ],
+        "technologies": ["React", "Tailwind CSS", "GitHub", "GitHub Pages", "Firebase"],
         "description": "A minimalist task management application that allows users to add, delete, and mark tasks as completed.",
         "challenges": [
           "Providing smooth state management for tasks added or removed.",

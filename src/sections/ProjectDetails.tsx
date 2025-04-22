@@ -52,7 +52,7 @@ const ProjectDetails = ({ project }: { project: any }) => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Technologies</h2>
+        {project.technologies && <h2 className="text-2xl font-semibold mb-4">Technologies</h2>} 
           <ul className="flex flex-wrap gap-3">
                   {Array.isArray(project.technologies) && project.technologies.map((tech) => (
           <li
@@ -75,6 +75,12 @@ const ProjectDetails = ({ project }: { project: any }) => {
                 <span>{challenge}</span>
               </li>
             ))}
+            {project.solutions.map((challenge, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <CheckCircleIcon className="text-emerald-400 mt-1 w-5 h-5" />
+                <span>{challenge}</span>
+              </li>
+            ))}
           </ul>
         </section>
 
@@ -82,6 +88,9 @@ const ProjectDetails = ({ project }: { project: any }) => {
           <h2 className="text-2xl font-semibold mb-4">Results & Metrics</h2>
           <ul className="space-y-2 text-white/80">
             {Array.isArray(project.results) && project.results.map((r, index) => (
+              <li key={index}>• {r}</li>
+            ))}
+            {Array.isArray(project.metrics) && project.metrics.map((r, index) => (
               <li key={index}>• {r}</li>
             ))}
           </ul>

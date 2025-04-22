@@ -31,7 +31,7 @@ export const LanguageSwitchDropdown = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative text-white">
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-1.5 border border-white/15 rounded-full bg-white/10 backdrop-blur text-sm hover:bg-white/20 transition-colors"

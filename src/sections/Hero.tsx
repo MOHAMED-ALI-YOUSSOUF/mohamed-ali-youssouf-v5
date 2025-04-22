@@ -176,7 +176,7 @@ export const HeroSection = () => {
         <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-4">
           <div className="flex items-center gap-4">
             <motion.a
-              href="https://linkedin.com/in/your-profile"
+              href="https://linkedin.com/in/mohamed-ali-youssouf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
@@ -186,7 +186,7 @@ export const HeroSection = () => {
               <Linkedin size={28} />
             </motion.a>
             <motion.a
-              href="https://github.com/your-profile"
+              href="https://github.com/MOHAMED-ALI-YOUSSOUF"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
@@ -196,7 +196,7 @@ export const HeroSection = () => {
               <Github size={28} />
             </motion.a>
             <motion.a
-              href="/MOHAMED_ALI_YOUSSOUF_RESUME.pdf"
+              href="/Mohamed-Ali-Youssouf-CV.pdf"
               download
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

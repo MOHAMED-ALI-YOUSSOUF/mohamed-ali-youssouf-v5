@@ -17,8 +17,9 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  description: "Discover the projects and skills of Mohamed Ali Youssouf, a passionate full-stack web developer specializing in JavaScript, React, and Next.js.",
 };
+
 
 export default async function RootLayout({
   children,

@@ -128,6 +128,49 @@
   },
   "portfolioProjects": [
     {
+      "company": "QRMenu",
+      "slug": "qrmenu",
+      "link": "https://qrmenu.rohaty.com",
+      "image": "/images/projects/qrmenu.png",
+      "year": "2025",
+      "title": "Système de Menu QR pour Restaurants",
+      "results": [
+        "Génération automatique de menus QR personnalisés",
+        "Interface moderne et fluide pour consulter les menus",
+        "Gestion simple pour les restaurateurs : catégories, plats, images, prix"
+      ],
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn",
+        "Sanity",
+        "Clerk",
+        "Resend",
+        "TanStack React Query",
+        "Framer Motion",
+        "QRCode"
+      ],
+      "description": "QRMenu est une application SaaS permettant aux restaurants de créer et gérer leurs menus numériques accessibles via QR code. Les clients scannent le code et accèdent à un menu moderne et interactif.",
+      "challenges": [
+        "Rendre le système simple pour les restaurateurs non-techniques.",
+        "Assurer une génération rapide et fiable des QR codes."
+      ],
+      "solutions": [
+        "Sanity pour une gestion flexible et en temps réel du contenu.",
+        "Clerk pour une authentification sécurisée.",
+        "React Query pour synchroniser l’état du menu sans rechargement."
+      ],
+      "metrics": {
+        "users": "30+ restaurants inscrits",
+        "transactions": "Plus de 5 000 scans QR",
+        "launchDate": "Mai 2025"
+      }
+    }
+
+    ,
+    {
       "company": "Rohaty.com",
       "slug": "rohaty",
       "link": "https://rohaty.com",
@@ -166,7 +209,87 @@
         "launchDate": "Janvier 2025"
       }
     },
-    
+    {
+      "company": "DentWise Pro",
+      "slug": "dentwise-pro",
+      "link": "https://dentwise-pro.vercel.app",
+      "image": "/images/projects/dentwise-pro.png",
+      "year": "2025",
+      "title": "Application Professionnelle pour Cliniques Dentaires",
+      "results": [
+        "Gestion des patients, rendez-vous et dossiers médicaux",
+        "Interface claire, moderne et adaptée aux équipes médicales",
+        "Base de données scalable et sécurisée avec Prisma + Postgres"
+      ],
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn",
+        "Prisma",
+        "Neon Postgres",
+        "Clerk",
+        "Resend",
+        "Vapi.ai",
+        "TanStack React Query",
+        "Framer Motion"
+      ],
+      "description": "DentWise Pro est une application web dédiée aux cliniques dentaires. Elle simplifie la gestion des patients, des rendez-vous, des traitements et des communications grâce à une interface intuitive et performante.",
+      "challenges": [
+        "Concevoir un système fiable pour la gestion médicale.",
+        "Assurer une performance élevée même avec des milliers de patients."
+      ],
+      "solutions": [
+        "Prisma + Neon pour une base de données rapide et scalable.",
+        "React Query pour un état en temps réel et des mises à jour fluides.",
+        "Automatisation des emails via Resend."
+      ],
+      "metrics": {
+        "users": "5+ cliniques en test",
+        "transactions": "Plus de 1 000 dossiers créés",
+        "launchDate": "Juin 2025"
+      }
+    },
+    {
+      "company": "Afar Quran",
+      "slug": "afar-quran",
+      "link": "https://afar-quran.vercel.app",
+      "image": "/images/projects/afar-quran.png",
+      "year": "2025",
+      "title": "Plateforme Afar pour la Lecture et l’Écoute du Coran",
+      "results": [
+        "Lecture, écoute et navigation fluide des sourates",
+        "Traduction et tafsir en langue Afar",
+        "Interface moderne et accessible"
+      ],
+      "technologies": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn",
+        "Sanity",
+        "Framer Motion"
+      ],
+      "description": "Afar Quran est une plateforme moderne dédiée à la lecture et à l’écoute du Coran, entièrement conçue pour la communauté djiboutienne et afarophone. Elle inclut sourates, audios, traductions et tafsir.",
+      "challenges": [
+        "Créer une plateforme religieuse fluide et très accessible.",
+        "Gérer du contenu audio et textuel lourd sans perte de performance."
+      ],
+      "solutions": [
+        "Utilisation de Sanity pour gérer les sourates et leur contenu.",
+        "Optimisation des performances côté client et serveur."
+      ],
+      "metrics": {
+        "users": "Plus de 2 000 utilisateurs afarophones",
+        "transactions": "N/A",
+        "launchDate": "Mai 2025"
+      }
+    }
+
+
+    ,
     {
       "company": "AI Interview Prep",
       "slug": "ai-interview-prep",

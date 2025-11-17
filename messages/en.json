@@ -128,6 +128,48 @@
   },
     "portfolioProjects": [
       {
+        "company": "QRMenu",
+        "slug": "qrmenu",
+        "link": "https://qrmenu.rohaty.com",
+        "image": "/images/projects/qrmenu.png",
+        "year": "2025",
+        "title": "QR Code Menu SaaS for Restaurants",
+        "results": [
+          "Restaurants can create digital menus with QR codes",
+          "Admin dashboard for managing categories and items",
+          "Fast SaaS-style web app optimized for restaurants"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Sanity",
+          "Clerk",
+          "Resend",
+          "Tanstack/React-Query",
+          "Framer Motion",
+          "QRCode Generator"
+        ],
+        "description": "QRMenu is a modern SaaS application that allows restaurants to create digital menus accessible via QR codes. It offers a clean admin dashboard, easy menu customization, and a smooth viewing experience for customers.",
+        "challenges": [
+          "Building a multi-restaurant system with fully dynamic menus.",
+          "Ensuring ultra-fast menu loading even with poor internet."
+        ],
+        "solutions": [
+          "Used Sanity for real-time content management.",
+          "QR codes generated instantly for each restaurant.",
+          "Optimized pages with React Query and server-side rendering."
+        ],
+        "metrics": {
+          "users": "20+ restaurants in testing",
+          "transactions": "N/A (no online payments)",
+          "launchDate": "May 2025"
+        }
+      }
+      ,
+      {
         "company": "Rohaty.com",
         "slug": "rohaty",
         "link": "https://rohaty.com",
@@ -166,7 +208,88 @@
           "launchDate": "January 2025"
         }
       },
-      
+      {
+        "company": "DentWise Pro",
+        "slug": "dentwise-pro",
+        "link": "https://dentwise-pro.vercel.app",
+        "image": "/images/projects/dentwise-pro.png",
+        "year": "2025",
+        "title": "Dental Clinic Patient Management Platform",
+        "results": [
+          "Online appointment system with AI assistant",
+          "Clinic dashboard with patients, services, and schedules",
+          "Fully secure authentication with Clerk"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Prisma",
+          "Neon Postgres",
+          "Resend",
+          "Vapi.ai",
+          "Clerk",
+          "Tanstack/React-Query",
+          "Framer Motion"
+        ],
+        "description": "DentWise Pro is a complete dental clinic management platform that enables clinics to manage appointments, patients, and services. It also integrates an AI-powered assistant via Vapi.ai for improved client communication.",
+        "challenges": [
+          "Structuring relational data for clinics using a scalable database.",
+          "Integrating real-time communication with AI voice assistant."
+        ],
+        "solutions": [
+          "Used Prisma with Neon Postgres for efficient and scalable data handling.",
+          "Integrated Vapi.ai for AI-assisted appointment booking.",
+          "Implemented secure auth flows with Clerk."
+        ],
+        "metrics": {
+          "users": "50+ patients registered (demo)",
+          "transactions": "30+ appointments booked",
+          "launchDate": "May 2025"
+        }
+      },
+      {
+        "company": "Afar Quran",
+        "slug": "afar-quran",
+        "link": "https://afar-quran.vercel.app",
+        "image": "/images/projects/afar-quran.png",
+        "year": "2025",
+        "title": "Quran Translation Platform in Afar Language",
+        "results": [
+          "Full Quran translation in Afar language",
+          "Clean and spiritual reading interface",
+          "Fast hosting on Vercel with dynamic data"
+        ],
+        "technologies": [
+          "Next.js",
+          "React.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Shadcn",
+          "Sanity",
+          "Framer Motion"
+        ],
+        "description": "Afar Quran is a web platform offering Quran translation into the Afar language. It provides a simple, respectful, and user-friendly reading interface with smooth animations.",
+        "challenges": [
+          "Managing large text content without performance issues.",
+          "Providing a readable and peaceful UI for readers."
+        ],
+        "solutions": [
+          "Sanity CMS used for scalable content delivery.",
+          "Text optimized with dynamic rendering and caching.",
+          "Animations added with Framer Motion for a soft UX."
+        ],
+        "metrics": {
+          "users": "1,000+ Afar speakers reached",
+          "transactions": "N/A",
+          "launchDate": "April 2025"
+        }
+      }
+
+
+      ,
       {
         "company": "AI Interview Prep",
         "slug": "ai-interview-prep",

@@ -196,7 +196,7 @@ export const HeroSection = () => {
               <Github size={28} />
             </motion.a>
             <motion.a
-              href="/Mohamed-Ali-Youssouf-CV.pdf"
+              href="/MOHAMED-ALI-YOUSSOUF-CV.pdf"
               download
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
